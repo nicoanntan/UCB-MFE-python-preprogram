@@ -5,6 +5,7 @@ def evolve(initial_state):
 
     for row in range(row_len):
         for col in range(col_len):
+            # count alive neighbour (includes center cell)
             neighbour_alive = 0
             for n_row in range(max(row - 1, 0), min(row + 2, row_len)):
                 for n_col in range(max(col - 1, 0), min(col + 2, col_len)):
